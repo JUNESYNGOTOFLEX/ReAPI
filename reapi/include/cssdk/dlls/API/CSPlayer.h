@@ -120,6 +120,7 @@ public:
 	virtual void SetScoreboardAttributes(CBasePlayer *destination = nullptr) = 0;
 	virtual void Observer_FindNextPlayer(bool bReverse, const char *name = nullptr) = 0;
 	virtual void TakeDamageImpulse(CBasePlayer *pAttacker, float flKnockbackForce, float flVelModifier) = 0;
+	virtual void Radio(const char *msg_id, const char *msg_verbose = nullptr, short pitch = 100, bool showIcon = true);
 
 	CBasePlayer *BasePlayer() const;
 
