@@ -1257,7 +1257,7 @@ native rg_player_takedamage_impulse(const player, const attacker, const Float:fl
 *
 * @noreturn
 */
-native rg_radio(const player, const msg_id[], const msg_verbose[] = "", const pitch = PITCH_NORM, const bool:show_icon = true);
+native rg_radio(const player, const msg_id[], const msg_verbose[] = "", const pitch = PITCH_NORM, const bool:showIcon = true);
 
 /*
 * Fires a trace line between two origins, retrieving the end point and entity hit.
