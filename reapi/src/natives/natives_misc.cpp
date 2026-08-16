@@ -3435,6 +3435,8 @@ cell AMX_NATIVE_CALL rg_radio(AMX* amx, cell* params)
 
 	CBasePlayer *pPlayer = UTIL_PlayerByIndex(params[arg_index]);
 	CHECK_CONNECTED(pPlayer, arg_index);
+
+	CAmxArgs args(amx, params);
 	
 	char sample[256], message[190];
 	const char *msg_id       = getAmxString(amx, params[arg_msg_id], sample);
